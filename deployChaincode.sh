@@ -314,7 +314,7 @@ chaincodeInvokeInit
 
 
 
-
+##### deploy chaincode on mychannel2
 
 
 export CORE_PEER_TLS_ENABLED=true
@@ -379,7 +379,7 @@ CHANNEL_NAME="mychannel2"
 CC_RUNTIME_LANGUAGE="node"
 VERSION="1"
 CC_SRC_PATH="./artifacts/chaincode/LSP_2"
-CC_NAME="lsp2"
+CC_NAME="lsptwo"
 
 packageChaincode() {
     rm -rf ${CC_NAME}.tar.gz
@@ -616,11 +616,11 @@ checkCommitReadyness
 # checkCommitReadyness
 commitChaincodeDefination
 queryCommitted
-# chaincodeInvokeInit
+chaincodeInvokeInit
 # # sleep 5
-chaincodeInvoke
+# chaincodeInvoke
 # # sleep 3
-chaincodeQuery
+# chaincodeQuery
 
 
 
